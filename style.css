@@ -115,9 +115,9 @@ iframe {
   line-height: 1;
 }
 .ratings {
-  margin-top: -20px;
+  margin-top: -24px;
   width: 117px;
-  margin-left: 109px;
+  margin-left: 175px;
 }
 .ratings h6 {
   font-family: "Outfit", Sans-serif;
@@ -155,6 +155,10 @@ grad {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.metaAddVideoContainer{
+  width: 100%;
+  height: 100%;
+}
 .metaAddContentParaContainer p {
   color: #e2e2e2;
   font-family: "Outfit", Sans-serif;
@@ -164,7 +168,7 @@ grad {
 }
 iframe {
   width: 100%;
-  /* height: 299px; */
+  height: 299px;
 }
 .metaAddVideoContainerBackground {
   background-color: transparent;
@@ -1076,5 +1080,11 @@ underlined {
   width: 40%;
   color: white;
   padding: 10px;
+}
+@media (max-width:425px){
+  iframe {
+    height: 197px;
+  }
+  
 }
 
