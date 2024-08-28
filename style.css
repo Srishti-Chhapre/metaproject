@@ -1031,6 +1031,7 @@ underlined {
   border-top:1px solid rgb(132, 132, 132);
   /* opacity: 0;
   visibility: hidden; */
+  padding: 10px;
 }
 
 .sticky-footer.show {
