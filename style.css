@@ -1098,6 +1098,29 @@ underlined {
   color: white;
   padding: 10px;
 }
+@media (min-width: 1024px) {
+  .metaAddContentSubContainer{
+    width: 43% !important;
+  }
+  .metaAddContentSecondSubContainer{
+    width: 40% !important;
+  }
+  .metaAddContent {
+    gap: 3rem !important;
+  }
+  iframe {
+   height: inherit !important;
+}
+.desktopmetaAdRedButton p {
+  font-size: 15px;
+  text-align: center;
+}
+.desktopmetaAdRedButton span{
+  font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+}
+}
 @media (min-width: 768px) {
   .metaAdRedButton {
     display: none;
@@ -1107,18 +1130,17 @@ underlined {
     gap: 2rem;
     width: 100%;
     justify-content: center;
+    margin-top: 30px;
   }
   .desktopmetaAdRedButton {
     display: block;
   }
   .metaAddContent h2 {
     color: #ffffff;
-    font-family: "Outfit", Sans-serif;
     font-size: 40px;
     font-weight: 600;
     line-height: 50px;
-    letter-spacing: 0.5px;
-    word-spacing: 0px;
+    margin-top: 22px;
   }
   .metaAddContentParaContainer p{
     font-size: 22px;
