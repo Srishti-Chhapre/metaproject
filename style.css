@@ -960,6 +960,7 @@ underlined {
   margin-top: 41px !important;
   justify-content: center;
   padding-bottom: 30px;
+  margin-bottom: 40px;
 }
 .faqAllContentContainer {
   width: 90%;
@@ -980,7 +981,6 @@ underlined {
   text-align: left;
   background-color: #ffffff0d;
   padding: 18px 18px 18px 18px;
-
   border: none;
   outline: none;
   cursor: pointer;
