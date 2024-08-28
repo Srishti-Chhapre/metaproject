@@ -117,7 +117,7 @@ iframe {
 .ratings {
   margin-top: -24px;
   width: 117px;
-  margin-left: 175px;
+  margin-left: 119px;
 }
 .ratings h6 {
   font-family: "Outfit", Sans-serif;
@@ -776,6 +776,7 @@ underlined {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 440px;
 }
 .seventhContainerFirstContainer h1,
 .seventhContainerSecondContainer h1 {
@@ -807,7 +808,7 @@ underlined {
   margin-bottom: 30px;
 }
 .seventhContainerCard img {
-  height: 200px;
+  height: 100%;
   width: 100%;
   border-radius: 18px;
 }
@@ -1085,6 +1086,8 @@ underlined {
   iframe {
     height: 197px;
   }
-  
+  .seventhContainer {
+    padding-top: 738px;
+}
 }
 
