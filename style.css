@@ -698,7 +698,7 @@ underlined {
   position: relative;
   z-index: 1;
   padding-top: 470px;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .sixthContainer::before {
@@ -763,7 +763,8 @@ underlined {
   display: inline-block;
   height: 100%;
   /* width: auto; */
-  width: 271px;
+  /* width: 271px; */
+  width: 100%;
 }
 .seventhContainer {
   background-color: #07090a;
@@ -1081,6 +1082,9 @@ underlined {
   width: 40%;
   color: white;
   padding: 10px;
+}
+@media (min-width:768px){
+
 }
 @media (max-width:425px){
   iframe {
