@@ -761,28 +761,323 @@ underlined {
   /* width: auto; */
   width: 271px;
 }
-.seventhContainer{
-  background-color: #07090A;
+.seventhContainer {
+  background-color: #07090a;
   background-image: url(https://lp1.learnmize.in/wp-content/uploads/2023/03/gradient-shapes-bg.png);
   background-position: top left;
   background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.seventhContainer::before{
-content: '';
+.seventhContainerFirstContainer h1,
+.seventhContainerSecondContainer h1 {
+  color: #ffffff;
+  font-family: "Outfit", Sans-serif;
+  font-size: 22px;
+  line-height: 1.7em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  word-spacing: 0px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px !important;
+}
+.seventhContainer::before {
+  content: "";
   background-image: url(https://lp1.learnmize.in/wp-content/uploads/2024/07/ooorganize-12.svg);
   background-position: 11% -67px;
   background-repeat: repeat;
   background-size: 233px auto;
 }
-.seventhContainerCard{
+.seventhContainerCard {
   width: 100%;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #FFFFFF26;
+  border-color: #ffffff26;
   border-radius: 18px 18px 18px 18px;
+  margin-top: 51px;
+  margin-bottom: 30px;
 }
-.seventhContainerCard img{
+.seventhContainerCard img {
   height: 200px;
-  width:280px ;
+  width: 100%;
+  border-radius: 18px;
+}
+.emptyDiv {
+  /* width: 120px; */
+  width: 34%;
+  height: 4px;
+  background-color: #ffffff26;
+  margin-bottom: 50px;
+}
+.reduceContainer,
+.increaseContainer {
+  margin-bottom: 10px;
+}
+.reduceContainer p,
+.increaseContainer p {
+  font-family: "Outfit", Sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+.eightContainer {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #041321 0%, #05161e 100%);
+  position: relative;
+  padding-bottom: 50px;
+}
+.eightContainerheader {
+  background: linear-gradient(
+    91.67deg,
+    #fff61a 1.41%,
+    #fff519 32.18%,
+    #ffb800 49.21%,
+    #fff61a 66.08%,
+    #fff61a 101.54%
+  );
+  background-size: 200% 200%;
+  background-position: center center;
+  animation: gradient 5s infinite;
+  padding: 10px;
+  text-align: center;
+}
+.eightContainerheader h1 {
+  color: #060606;
+  font-family: "IBM Plex Mono", Sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+.eightContainerCardsFirstContainer,
+.eightContainerCardsSSecondContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.eightContainerCardsSSecondContainer {
+  margin-top: 3rem;
+}
+.eightContainerContentContainer::before {
+  content: "";
+  background-image: url(https://lp1.learnmize.in/wp-content/uploads/2024/07/ooorganize-13.svg);
+  background-position: bottom center;
+  background-repeat: repeat;
+  background-size: 495px auto;
+  filter: brightness(200%) contrast(0%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
+  position: absolute;
+}
+.eightContainerContentContainer h2 {
+  color: #ffffff;
+  font-family: "Outfit", Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3em;
+  letter-spacing: 0.5px;
+  word-spacing: 0px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.Card {
+  background-color: transparent;
+  background-image: linear-gradient(35deg, #ffffff14 0%, #f2295b12 100%);
+  border: 1px solid #ffffff1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  width: 90%;
+  border-radius: 15px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.Card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px 8px 8px 8px;
+}
+.Card h3 {
+  text-transform: uppercase;
+  font-family: "Syne", Sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 28px;
+}
+.Card p {
+  color: #ebebeb;
+  font-family: "Outfit", Sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  width: 100%;
+}
+.ninthContainer {
+  background-color: #07090a;
+  background-image: url(https://lp1.learnmize.in/wp-content/uploads/2023/03/gradient-shapes-bg.png);
+  background-position: top left;
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ninthContainer::before {
+  content: "";
+  background-image: url(https://lp1.learnmize.in/wp-content/uploads/2024/07/ooorganize-12.svg);
+  background-position: 11% -67px;
+  background-repeat: repeat;
+  background-size: 233px auto;
+}
+.ninthContainer h1 {
+  color: #ffffff;
+  font-family: "Outfit", Sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.7em;
+  letter-spacing: 0.5px;
+  word-spacing: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px !important;
+}
+.faq-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 41px !important;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.faqAllContentContainer {
+  width: 90%;
+}
+.faq-item {
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 22px;
+  border: 1px solid #ffffff36;
+  border-radius: 3px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.faq-question {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background-color: #ffffff0d;
+  padding: 18px 18px 18px 18px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  color: white !important;
+  line-height: 2em;
+  font-family: "Outfit", Sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 15px;
+  /* padding: 7px 15px; */
+  transform-origin: bottom;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  background-color: #ffffff21;
+  color: #ffffff;
+  font-family: "Outfit", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+.faq-answer p {
+  width: 100%;
+  padding-top: 7px;
+}
+.sticky-footer {
+  /* background-size: initial;
+  background-blend-mode: soft-light; */
+  background-image: url(https://purnamcommunity.in/wp-content/uploads/2024/01/img20-1.png) !important;
+  margin-bottom: 0px;
+  z-index: 9999;
+  box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.3);
+  width: 100% !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  background-position: 50%;
+  transition: opacity 0.5s, visibility 0.5s;
+  border-top:1px solid rgb(132, 132, 132);
+  /* opacity: 0;
+  visibility: hidden; */
+}
+
+.sticky-footer.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sticky-footer h5 {
+  color: #731578 !important;
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 800;
+  font-size: 3.7rem;
+  margin-top: 12px !important;
+  margin-right: -23px !important;
+  margin-bottom: 4px !important;
+}
+
+.sticky-footer p {
+  color: #414042 !important;
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+  text-align: left;
+  font-size: 16px;
+}
+
+.sticky-footer span {
+  color: #414042 !important;
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: normal;
+  text-align: left;
+}
+.footerButton {
+  color: #ffffff !important;
+  border-width: 0px !important;
+  border-color: #ffffff;
+  border-radius: 100px;
+  font-size: 2.4rem;
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  background-image: linear-gradient(142deg, #E50C0C 0%, #A8032C 100%);
+  background-color: #ffffff;
+  padding-top: 12px !important;
+  padding-right: 49px !important;
+  padding-bottom: 12px !important;
+  padding-left: 49px !important;
+  transition: all 300ms ease 0ms;
+  text-transform: uppercase;
 }
 
