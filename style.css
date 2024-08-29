@@ -483,7 +483,7 @@ iframe {
   padding-top: 15px;
 }
 .thirdContainer {
-  background-color: #05161e;
+  /* background-color: #05161e; */
   padding-top: 10px;
   position: relative;
   padding-left: 13px;
@@ -492,9 +492,7 @@ iframe {
 }
 .thirdContainerCard {
   background-color: #ffffff0d;
-  /* background-color: #000000; */
   backdrop-filter: blur(100px);
-  /* padding: 10px; */
   border-radius: 22px 22px 22px 22px;
   box-shadow: 0px 0px 35px 0px
     rgba(60.14473486541574, 36.297818656589655, 106.22343749999999, 0.07);
@@ -1166,8 +1164,9 @@ underlined {
     margin-top: 0px;
   }
   .sixthContainer {
-    background-size: 59% auto;
     padding-top: 0px;
+    background-position: bottom left;
+    background-size: 59% auto;
   }
   .companiesNameContainer {
     height: 58px;
@@ -1192,14 +1191,18 @@ underlined {
     line-height: 30px;
   }
   .mentorNameContainer {
-    /* width: 39%; */
-    width: 100%;
     background-color: transparent;
     background-image: linear-gradient(180deg, #00000000 100%, #000000 100%);
+    position: relative;
+    width: 39%;
+    margin-left: 75rem;
+    padding-top: 23rem;
+    padding-bottom: 23rem;
   }
   .seventhContainer {
     gap: 3rem;
     padding-bottom: 40px;
+    padding-top: 35px;
   }
   .seventhContainerFirstContainer {
     display: flex;
@@ -1321,7 +1324,8 @@ underlined {
   .fourthContainer,
   .fifthContainer,
   .sixthContainer,
-  .seventhContainer.eightContainer,
+  .seventhContainer,
+  .eightContainer,
   .ninthContainer {
     z-index: 999999;
     position: relative;
