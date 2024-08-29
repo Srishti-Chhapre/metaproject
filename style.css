@@ -1040,7 +1040,7 @@ underlined {
   background-blend-mode: soft-light; */
   background-image: url(https://purnamcommunity.in/wp-content/uploads/2024/01/img20-1.png) !important;
   margin-bottom: 0px;
-  z-index: 9999;
+  z-index: 9999999999;
   box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.3);
   width: 100% !important;
   position: fixed;
@@ -1127,8 +1127,11 @@ underlined {
     background-size: 100% auto;
     background-attachment: fixed;
     padding-bottom: 60px;
+    padding-top: 0px;
+    position: sticky;
+    top: 0;
   }
-  .secondContainer::before{
+  .secondContainer::before {
     background-size: 564px auto;
     background-attachment: fixed;
     height: 100%;
@@ -1180,9 +1183,8 @@ underlined {
     line-height: 1.2em;
     margin: 0px 0px 0px 0px;
     padding: 11px 11px 11px 11px;
-    background-color: #05161E;
+    background-color: #05161e;
     width: 63%;
-
   }
   .aboutMentorContainer p {
     font-size: 21px;
@@ -1198,8 +1200,8 @@ underlined {
   .seventhContainer {
     gap: 3rem;
     padding-bottom: 40px;
-}
-  .seventhContainerFirstContainer{
+  }
+  .seventhContainerFirstContainer {
     display: flex;
     gap: 2rem;
     width: 86%;
@@ -1213,106 +1215,117 @@ underlined {
     display: flex;
     gap: 3rem;
     justify-content: center;
-}
+  }
   .seventhContainerCard {
     margin-top: 0px;
     width: 46%;
-}
-.seventhContainerFirstContainer h1, .seventhContainerSecondContainer h1 {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 48px;
-}
-.seventhContainerFirstContainer h1{
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 48px;
-  /* width: 79%; */
-}
-.reduceContainer, .increaseContainer {
-  margin-bottom: 20px;
-}
-.benefitsSecondContainer,.benefitsFirstContainer{
-  width: 42%;
-}
-.seventhContainerCardimg2,.seventhContainerSecondCard{
-  height: 358px !important;
-  width: 560px !important;
-}
-.benefitsFirstContainer{
-
-}
-.eightContainerheader h1 {
-  font-size: 18px;
-}
-.eightContainerContentContainer h2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 50px;
-}
-.eightContainerCardsFirstContainer, .eightContainerCardsSSecondContainer {
-  padding: 0px 159px;
-  flex-direction: row;
-}
-.Card {
-  height: 450px;
-}
-.eightContainer {
-  padding-bottom: 85px;
-}
-.ninthContainer h1 {
-  font-size: 36px;
-  line-height: 48px;
-}
-.faq-question {
-  font-size: 19px;
-}
-.ratingIndividuals span {
-  font-size: 17px;
-}
-.ratings h6 {
-
-  font-size: 13px;
-}
-.changedLifeOfIndividuals {
-  width: 76%;
-}
-.ratings {
-  margin-top: -32px;
-  width: 100%;
-  margin-left: 210px;
-}
-.trophy {
-  height: 100%;
-  width: auto;
-}
-#trophyimg {
-  height: 36px;
-  width: 36px;
-}
-.aryanTripathiImg {
-  background-size: contain;
-  height: auto;
-}
-.studentsWorkingClients {
-  position: relative;
-  z-index: 99;
-  width: 570px;
-  /* height: 562px; */
-}
-.forTrainingClients h2 {
-  font-size: 31px;
-  line-height: 39px;
-  padding: 20px 20px 0;
-}
-.forTrainingClients p {
-  font-size: 18px;
-  padding: 20px 20px 0;
-
-}
-.lastDiv h2 {
-  font-size: 19px;
-}
+  }
+  .seventhContainerFirstContainer h1,
+  .seventhContainerSecondContainer h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+  }
+  .seventhContainerFirstContainer h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    /* width: 79%; */
+  }
+  .reduceContainer,
+  .increaseContainer {
+    margin-bottom: 20px;
+  }
+  .benefitsSecondContainer,
+  .benefitsFirstContainer {
+    width: 42%;
+  }
+  .seventhContainerCardimg2,
+  .seventhContainerSecondCard {
+    height: 358px !important;
+    width: 560px !important;
+  }
+  .benefitsFirstContainer {
+  }
+  .eightContainerheader h1 {
+    font-size: 18px;
+  }
+  .eightContainerContentContainer h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+  .eightContainerCardsFirstContainer,
+  .eightContainerCardsSSecondContainer {
+    padding: 0px 159px;
+    flex-direction: row;
+  }
+  .Card {
+    height: 450px;
+  }
+  .eightContainer {
+    padding-bottom: 85px;
+  }
+  .ninthContainer h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .faq-question {
+    font-size: 19px;
+  }
+  .ratingIndividuals span {
+    font-size: 17px;
+  }
+  .ratings h6 {
+    font-size: 13px;
+  }
+  .changedLifeOfIndividuals {
+    width: 76%;
+  }
+  .ratings {
+    margin-top: -32px;
+    width: 100%;
+    margin-left: 210px;
+  }
+  .trophy {
+    height: 100%;
+    width: auto;
+  }
+  #trophyimg {
+    height: 36px;
+    width: 36px;
+  }
+  .aryanTripathiImg {
+    background-size: contain;
+    height: auto;
+  }
+  .studentsWorkingClients {
+    position: relative;
+    z-index: 99;
+    width: 570px;
+    /* height: 562px; */
+    margin-left: 84rem;
+  }
+  .forTrainingClients h2 {
+    font-size: 31px;
+    line-height: 39px;
+    padding: 20px 20px 0;
+  }
+  .forTrainingClients p {
+    font-size: 18px;
+    padding: 20px 20px 0;
+  }
+  .lastDiv h2 {
+    font-size: 19px;
+  }
+  .fourthContainer,
+  .fifthContainer,
+  .sixthContainer,
+  .seventhContainer.eightContainer,
+  .ninthContainer {
+    z-index: 999999;
+    position: relative;
+  }
 }
 @media (min-width: 768px) {
   .metaAdRedButton {
@@ -1354,8 +1367,8 @@ underlined {
   }
   .faq-answer p {
     font-size: 18px;
-    padding:18px;
-}
+    padding: 18px;
+  }
 }
 @media (max-width: 425px) {
   iframe {
