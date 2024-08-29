@@ -1126,10 +1126,12 @@ underlined {
   .secondContainer {
     background-size: 100% auto;
     background-attachment: fixed;
+    padding-bottom: 60px;
   }
   .secondContainer::before{
     background-size: 564px auto;
     background-attachment: fixed;
+    height: 100%;
   }
   .fourthContainer {
     flex-direction: row;
@@ -1291,6 +1293,25 @@ underlined {
 .aryanTripathiImg {
   background-size: contain;
   height: auto;
+}
+.studentsWorkingClients {
+  position: relative;
+  z-index: 99;
+  width: 570px;
+  /* height: 562px; */
+}
+.forTrainingClients h2 {
+  font-size: 31px;
+  line-height: 39px;
+  padding: 20px 20px 0;
+}
+.forTrainingClients p {
+  font-size: 18px;
+  padding: 20px 20px 0;
+
+}
+.lastDiv h2 {
+  font-size: 19px;
 }
 }
 @media (min-width: 768px) {
