@@ -1134,6 +1134,48 @@ underlined {
     background-attachment: fixed;
     height: 100%;
   }
+  #secondContainerCardContainer{
+    overflow-y: auto;
+    position: relative;
+  }
+  .thirdContainerCard {
+    width: 579px;
+    margin-left: 84rem;
+    transform: rotateZ(1deg);
+  }
+  .thirdContainer h1 {
+    font-size: 31px;
+    line-height: 39px;
+  }
+  .thirdContainerCard p {
+    font-size: 18px;
+  }
+  .thirdContainerList span {
+    font-size: 19px;
+  }
+  .thirdContainer svg {
+    height: 25px;
+    width: 25px;
+  }
+  .thirdContainerspan{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .thirdContainerList {
+    gap: 6rem;
+}
+.thirdContainer h1 {
+  padding: 0px 33px;
+  padding-top: 33px;
+}
+.thirdContainerCard p {
+  padding: 0px 33px;
+}
+.thirdContainerButton {
+  margin-top: 87px;
+  margin-bottom: 87px;
+}
   .fourthContainer {
     flex-direction: row;
     padding-top: 80px;
