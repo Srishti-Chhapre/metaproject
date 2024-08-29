@@ -594,25 +594,32 @@ underlined {
   position: relative;
   z-index: 99;
 }
-.metaAdsWithoutGuidancePointsContainer::before {
-  /* content: '';
+.metaAdsWithGuidancePointsContainer {
+  border: 2px solid #16ca00;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #5eff001c 0%, #2af22914 100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  z-index: 99;
+}
+.metaAdsWithoutGuidancePointsContainer::before,.metaAdsWithGuidancePointsContainer::before{
+  content: '';
   background-image: url(https://lp1.learnmize.in/wp-content/uploads/2024/07/ooorganize-12.svg);
-  background-size: 222px auto;
-  background-size: 25% auto;
-  display: block;
-  position: absolute; */
-  /* content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(https://lp1.learnmize.in/wp-content/uploads/2024/07/ooorganize-12.svg);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-   z-index: 0;
-   filter: brightness(200%) contrast(0%) saturate(100%) blur(0px) hue-rotate(0deg); */
+  background-size: 225px auto;
+  position: absolute; 
+  opacity: 0.2;
+  top: 0;  
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  z-index: -1;
+  filter: brightness(200%) contrast(0%) saturate(100%) blur(0px) hue-rotate(0deg);
+  mix-blend-mode: initial;
 }
 .metaAdsWithoutGuidancePointsContainer span,
 .metaAdsWithGuidancePointsContainer span {
@@ -629,17 +636,7 @@ underlined {
   font-weight: 400;
   padding-left: 10px;
 }
-.metaAdsWithGuidancePointsContainer {
-  border: 2px solid #16ca00;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
-  background-color: transparent;
-  background-image: linear-gradient(180deg, #5eff001c 0%, #2af22914 100%);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+
 .fifthContainer {
   background-color: #07090a;
   background-image: url(https://lp1.learnmize.in/wp-content/uploads/2023/03/gradient-shapes-bg.png);
@@ -655,6 +652,16 @@ underlined {
   background-position: 11% -67px;
   background-repeat: repeat;
   background-size: 233px auto;
+  position: absolute; 
+  opacity: 0.06;
+  top: 0;  
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  z-index: -1;
+  filter: brightness(200%) contrast(0%) saturate(100%) blur(0px) hue-rotate(0deg);
+  mix-blend-mode: initial;
+  /* background-attachment: fixed; */
 }
 .fifthContainer h1 {
   color: #ffffff;
@@ -811,6 +818,15 @@ underlined {
   background-position: 11% -67px;
   background-repeat: repeat;
   background-size: 233px auto;
+  position: absolute; 
+  opacity: 0.06;
+  top: 0;  
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  z-index: -1;
+  filter: brightness(200%) contrast(0%) saturate(100%) blur(0px) hue-rotate(0deg);
+  mix-blend-mode: initial;
 }
 .seventhContainerCard {
   width: 100%;
@@ -888,9 +904,15 @@ underlined {
   background-position: bottom center;
   background-repeat: repeat;
   background-size: 495px auto;
-  filter: brightness(200%) contrast(0%) saturate(100%) blur(0px)
-    hue-rotate(0deg);
-  position: absolute;
+  position: absolute; 
+  opacity: 0.2;
+  top: 0;  
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  z-index: -1;
+  filter: brightness(200%) contrast(0%) saturate(100%) blur(0px) hue-rotate(0deg);
+  mix-blend-mode: initial;
 }
 .eightContainerContentContainer h2 {
   color: #ffffff;
@@ -959,6 +981,15 @@ underlined {
   background-position: 11% -67px;
   background-repeat: repeat;
   background-size: 233px auto;
+  position: absolute; 
+  opacity: 0.06;
+  top: 0;  
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  z-index: -1;
+  filter: brightness(200%) contrast(0%) saturate(100%) blur(0px) hue-rotate(0deg);
+  mix-blend-mode: initial;
 }
 .ninthContainer h1 {
   color: #ffffff;
@@ -1100,6 +1131,23 @@ underlined {
   .firstContainer {
     padding-bottom: 90px;
   }
+  .firstContainer::before {
+    content: '';
+    background-image: url(https://lp1.learnmize.in/wp-content/uploads/2023/05/fall.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute; 
+    opacity: 0.13;
+    top: 0;  
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: -1;
+    filter: brightness(200%) contrast(0%) saturate(100%) blur(0px) hue-rotate(0deg);
+    mix-blend-mode: initial;
+}
+
   .metaAddContentSubContainer {
     width: 43% !important;
   }
@@ -1135,7 +1183,6 @@ underlined {
     height: 100%;
   }
   #secondContainerCardContainer{
-    overflow-y: auto;
     position: relative;
   }
   .thirdContainerCard {
@@ -1186,6 +1233,10 @@ underlined {
   .fourthContainerSecondCardMainHeading h1 {
     font-size: 28px;
     font-weight: 600;
+  }
+  .metaAdsWithoutGuidancePointsContainer::before,.metaAdsWithGuidancePointsContainer::before{
+    background-size: 25% auto;
+    opacity: 0.09;
   }
   .metaAdsWithoutGuidancePointsContainer p,
   .metaAdsWithGuidancePointsContainer p,
