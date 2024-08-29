@@ -1123,6 +1123,14 @@ underlined {
     font-weight: 600;
     line-height: 30px;
   }
+  .secondContainer {
+    background-size: 100% auto;
+    background-attachment: fixed;
+  }
+  .secondContainer::before{
+    background-size: 564px auto;
+    background-attachment: fixed;
+  }
   .fourthContainer {
     flex-direction: row;
     padding-top: 80px;
@@ -1256,6 +1264,33 @@ underlined {
 }
 .faq-question {
   font-size: 19px;
+}
+.ratingIndividuals span {
+  font-size: 17px;
+}
+.ratings h6 {
+
+  font-size: 13px;
+}
+.changedLifeOfIndividuals {
+  width: 76%;
+}
+.ratings {
+  margin-top: -32px;
+  width: 100%;
+  margin-left: 210px;
+}
+.trophy {
+  height: 100%;
+  width: auto;
+}
+#trophyimg {
+  height: 36px;
+  width: 36px;
+}
+.aryanTripathiImg {
+  background-size: contain;
+  height: auto;
 }
 }
 @media (min-width: 768px) {
