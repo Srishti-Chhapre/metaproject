@@ -296,6 +296,13 @@ iframe {
   font-weight: 600;
   margin-top: 10px;
 }
+.aryanTripathiImgContainer{
+  height: 100px;
+  width: 100px;
+}
+.aryanTripathiImg{
+  width: 100%;
+}
 /* .aryanTripathiImg {
   background-image: url("https://lp1.learnmize.in/wp-content/uploads/2024/01/Copy-of-IMG_9026.webp");
   background-repeat: no-repeat;
