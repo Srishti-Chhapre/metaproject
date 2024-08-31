@@ -364,6 +364,11 @@
     <div class="fifthContainer">
       <h1>What You Will Learn in this 2 Hour Power Packed Webinar</h1>
       <div class="fifthContainerCardsContainer">
+        <div class="pipeLineContainer">
+          <div class="pipeLine">
+            <div class="pipeLineInner" style="height: 0px;"></div>
+          </div>
+        </div>
         <div class="fifthContainerFirstCardContainer">
           <div class="cardContainer">
             <h2>Creative Testing</h2>
@@ -375,9 +380,8 @@
                 <path
                   d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
               </svg>
-              <!-- <div class="firstEmptyPipeLine"></div> -->
             </div>
-            <div class="firstEmptyPipeLine"></div>
+            <!-- <div class="EmptyPipeLine"></div> -->
           </div>
           <div class="emptyCardContainer">
             <div class="mobilecardContainer">
@@ -399,7 +403,7 @@
                   d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
               </svg>
             </div>
-            <div class="secondEmptyPipeLine"></div>
+            <!-- <div class="secondEmptyPipeLine"></div> -->
           </div>
           <div class="emptyCardContainer">
             <div class="mobilecardContainer">
@@ -421,7 +425,7 @@
                   d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
               </svg>
             </div>
-            <div class="thirdEmptyPipeLine"></div>
+            <!-- <div class="thirdEmptyPipeLine"></div> -->
           </div>
           <div class="emptyCardContainer">
             <div class="mobilecardContainer">
@@ -443,7 +447,7 @@
                   d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
               </svg>
             </div>
-            <div class="fourthEmptyPipeLine"></div>
+            <!-- <div class="fourthEmptyPipeLine"></div> -->
           </div>
           <div class="emptyCardContainer">
             <div class="mobilecardContainer">
@@ -465,7 +469,6 @@
                   d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
               </svg>
             </div>
-            <div class="fifthEmptyPipeLine"></div>
           </div>
           <div class="emptyCardContainer">
             <div class="mobilecardContainer">
@@ -516,9 +519,6 @@
           <img src="	https://lp1.learnmize.in/wp-content/uploads/2024/07/image-19-600x39-1-1-1.png" alt="">
         </div>
       </div>
-      <!-- <div class="companiesNameContainer">
-        <img src="	https://lp1.learnmize.in/wp-content/uploads/2024/07/image-19-600x39-1-1-1.png" alt="">
-      </div> -->
     </div>
     <div class="seventhContainer">
       <div class="seventhContainerFirstContainer">
@@ -718,7 +718,64 @@
         currentOpenAnswer = answer;
       }
     }
+    document.addEventListener('DOMContentLoaded', function() {
+    // Get all the card containers and pipeLineDiv elements
+    const containers = document.querySelectorAll('.fifthContainerFirstCardContainer, .fifthContainerSecondCardContainer, .fifthContainerThirdCardContainer, .fifthContainerFourthCardContainer, .fifthContainerFifthCardContainer, .fifthContainerSixthCardContainer');
+    const pipeLineDivs = document.querySelectorAll('.pipeLineDiv');
+    const svgs = document.querySelectorAll('.pipeLineDiv svg');
+    
+    // Get the progress bar inner div
+    const progressBar = document.querySelector('.pipeLineInner');
+    const maxHeight = 853; // Maximum height of the progress bar
+    const stepHeight = maxHeight / containers.length; // Height increment per container
 
+    let currentHeight = 0; // Initial height of the progress bar
+
+    // Function to increase or decrease the height of the progress bar
+    function adjustProgressBarHeight(visibleContainerIndex, scrollDirection) {
+        if (scrollDirection === 'down') {
+            // Increase height based on the number of containers scrolled into view
+            currentHeight = (visibleContainerIndex + 1) * stepHeight;
+        } else if (scrollDirection === 'up') {
+            // Decrease height based on the number of containers scrolled out of view
+            currentHeight = visibleContainerIndex * stepHeight;
+        }
+
+        // Ensure the height stays within bounds (0px to maxHeight)
+        currentHeight = Math.max(0, Math.min(currentHeight, maxHeight));
+
+        // Apply the new height
+        progressBar.style.height = currentHeight + 'px';
+
+        // Update SVG color and pipeLineDiv background color based on progress
+        pipeLineDivs.forEach((pipeLineDiv, index) => {
+            if (currentHeight < (index + 1) * stepHeight) {
+                svgs[index].style.fill = 'black'; // Change SVG color to black
+                pipeLineDiv.style.backgroundColor = 'white'; // Change background color to white
+            } else {
+                svgs[index].style.fill = ''; // Reset SVG color
+                pipeLineDiv.style.backgroundColor = ''; // Reset background color
+            }
+        });
+    }
+
+    // Determine scroll direction
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+        let currentScrollY = window.scrollY;
+        let scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
+        lastScrollY = currentScrollY;
+
+        // Check visibility of containers
+        containers.forEach((container, index) => {
+            let rect = container.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                adjustProgressBarHeight(index, scrollDirection);
+            }
+        });
+    });
+});
 
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

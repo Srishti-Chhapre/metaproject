@@ -159,6 +159,7 @@ grad {
   font-weight: 600;
   letter-spacing: 0.5px;
   word-spacing: 0px;
+  margin-top: 20px;
 }
 .metaAddContentParaContainer {
   padding-top: 2rem;
@@ -735,6 +736,7 @@ underlined {
   /* gap: 3rem; */
   padding-top: 25px;
   padding-bottom: 40px;
+  position: relative;
 }
 .sixthContainer {
   background-color: black;
@@ -768,6 +770,8 @@ underlined {
   font-weight: 500;
   text-transform: uppercase;
   /* line-height: 1.2em; */
+  background-color: transparent;
+  margin-top: -132px;
 }
 .mentorNameContainer h3 {
   font-family: "Mulish", Sans-serif;
@@ -775,13 +779,16 @@ underlined {
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1.2em;
+  background-color: #05161e;
+  padding: 10px;
 }
 .mentorNameContainer {
   margin: 0px 0px 0px 0px;
   padding: 11px 11px 11px 11px;
-  background-color: #05161e;
   z-index: 9999;
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
+  background-color: black;
 }
 .aboutMentorContainer p {
   color: #ffffff;
@@ -1175,11 +1182,25 @@ underlined {
   height: 100%;
   width: 82%;
 }
-/* .firstEmptyPipeLine {
-  height: 120px;
-  width: 5px;
-  background-color: #090512;
-} */
+.pipeLineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pipeLine {
+  background-color: transparent;
+  left: 50%;
+  position: absolute;
+  top: 0px;
+  bottom: 140.6px;
+  width: 4px;
+  transform: translateX(-50%);
+  background-image: linear-gradient(180deg, #00213f 0%, #f2295b);
+}
+.pipeLineInner {
+  background: #111;
+  transition: height 0.5s ease-in-out;
+}
 .firstEmptyPipeLine,
 .secondEmptyPipeLine,
 .thirdEmptyPipeLine,
@@ -1191,7 +1212,7 @@ underlined {
   position: relative;
 }
 
-.fifthEmptyPipeLine .progress{
+.fifthEmptyPipeLine .progress {
   height: 0;
   width: 100%;
   background-color: pink;
@@ -1204,6 +1225,7 @@ underlined {
   flex-direction: column;
   align-items: center;
 }
+
 @media (min-width: 1024px) {
   .header h2 {
     font-size: 18px;
@@ -1503,7 +1525,7 @@ underlined {
     margin-left: 40rem !important;
   } */
   .mentorNameContainer {
-    margin-left: 62rem !important;
+      margin-left: 83rem !important;
   }
   .companiesNameContainer {
     width: 390px !important;
@@ -1618,141 +1640,70 @@ underlined {
     padding: 0px 60px;
   }
 }
-@media(min-width:1020px) and (max-width:1030px){
-  .studentsWorkingClients,.thirdContainerCard{
+@media (max-width: 768px) {
+  .pipeLine {
+    left: 2.5%;
+  }
+  .fifthContainerFirstCardContainer,
+  .fifthContainerSecondCardContainer,
+  .fifthContainerThirdCardContainer,
+  .fifthContainerFourthCardContainer,
+  .fifthContainerFifthCardContainer,
+  .fifthContainerSixthCardContainer {
+    display: flex;
+    direction: rtl;
+  }
+  .emptyCardContainer{
+    width: auto;
+  }
+  .cardContainer {
+    direction: ltr;
+    width: 100%;
+  }
+  .fifthContainerCardsContainer {
+    gap: 5rem;
+  }
+  .metaAddContent {
+    padding: 0px 5px;
+}
+}
+@media (min-width: 1020px) and (max-width: 1030px) {
+  .studentsWorkingClients,
+  .thirdContainerCard {
     margin-left: 40rem !important;
-}
-}
-
-/* @media (min-width: 768px) and (max-width:1024px){
-  .studentsWorkingClients,.thirdContainerCard{
-    margin-left: 40rem;
-}
-.fourthContainerFirstCard,.fourthContainerSecondCard{
- width: 50%;
-}
-.mentorNameContainer {
-  margin-left: 40rem !important;
-  width: 59%;
+  }
+  .fourthContainerFirstCard,.fourthContainerSecondCard{
+    width: 45%;
 }
 .seventhContainerCard {
-  margin-top: 0px;
-  width: 59%;
   height: 100%;
 }
-.seventhContainerCard img {
-   height: auto;
-}
-.seventhContainerFirstContainer {
-  width: 95%;
-}
-.Card {
-  width: 100%;
+.seventhContainerCard {
+  width: 70%;
 }
 .eightContainerCardsFirstContainer, .eightContainerCardsSSecondContainer {
-  margin: 0px 15px;
+  padding: 0px 39px;
+}
+.metaAddContent {
   padding: 0px 0px;
 }
-} */
-/* @media (min-width: 768px)and (max-width: 1024px) {
-  .metaAdRedButton {
-    display: none !important;
-  }
-  .desktopmetaAdRedButton {
-    display: block !important;
-  }
-  .metaAddContent {
-    display: flex;
-    gap: 2rem;
-    width: 100%;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  .desktopmetaAdRedButton {
-    display: block;
-    width: 87%;
-  }
-  .metaAddContent h2 {
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 50px;
-    margin-top: 22px;
-  }
-  .metaAddContentParaContainer p {
-    font-size: 22px;
-    font-weight: 400;
-  }
-  .metaAddContentParaContainer {
-    width: 96%;
-  }
-  .metaAddContentSubContainer {
-    width: 55%;
-  }
-  .metaAddContentSecondSubContainer {
-    width: 45%;
-  }
-  iframe {
-    width: 100%;
-    height: 201px;
-  }
-  .faq-answer p {
-    font-size: 18px;
-    padding: 18px;
-  }
-} */
-/* @media (max-width: 767px) {
-  .metaAdRedButton {
-    display: none !important;
-  }
-  .desktopmetaAdRedButton {
-    display: block !important;
-  }
-  .metaAddContent {
-    display: flex;
-    gap: 2rem;
-    width: 100%;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  .desktopmetaAdRedButton {
-    display: block;
-    width: 87%;
-  }
-  .metaAddContent h2 {
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 50px;
-    margin-top: 22px;
-  }
-  .metaAddContentParaContainer p {
-    font-size: 22px;
-    font-weight: 400;
-  }
-  .metaAddContentParaContainer {
-    width: 96%;
-  }
-  .metaAddContentSubContainer {
-    width: 55%;
-  }
-  .metaAddContentSecondSubContainer {
-    width: 45%;
-  }
-  iframe {
-    width: 100%;
-    height: 201px;
-  }
-  .faq-answer p {
-    font-size: 18px;
-    padding: 18px;
-  }
-} */
-@media (max-width: 425px) {
+.mentorNameContainer{
+   margin-left: 62rem !important;
+}
+}
+@media (max-width: 428px) {
   iframe {
     height: 197px;
   }
+  .pipeLine {
+    left: 5%;
+}
   .seventhContainer {
     padding-top: 0px;
+  }
+}
+@media (max-width: 374px) {
+  .pipeLine{
+    left: 5.6%;
   }
 }
