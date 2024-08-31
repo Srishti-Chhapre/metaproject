@@ -382,13 +382,19 @@ iframe {
   border: 1px solid #ffffff17;
   border-radius: 22px 22px 22px 22px;
   box-shadow: 0 0 35px 0 rgba(60, 36, 106, 0.07) inset;
-  /* position: fixed; */
+  /* position: fixed;
+  top: 40px; */
   /* width: 570px; */
   margin-top: 0px;
   margin-bottom: 0px;
-  top: 40px;
   backdrop-filter: blur(100px);
   background-color: #ffffff0d;
+  /* position: fixed;
+  width: 570px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: 40px; */
+  /* inset-inline-start: 759.6px; */
 }
 .forTrainingClients h2 {
   color: #fff;
@@ -504,8 +510,8 @@ iframe {
   /* background-color: #05161e; */
   padding-top: 10px;
   position: relative;
-  padding-left: 13px;
-  padding-right: 13px;
+  /* padding-left: 13px; */
+  /* padding-right: 13px; */
   padding-bottom: 10px;
 }
 .thirdContainerCard {
@@ -517,6 +523,8 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* width: 300px; */
+  /* height: 476.66px; */
 }
 .thirdContainerCard p {
   color: #e0e0e0;
@@ -561,8 +569,8 @@ iframe {
   padding: 15px;
   width: 86%;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 75px;
+  margin-bottom: 80px;
 }
 underlined {
   text-decoration: underline;
@@ -579,7 +587,6 @@ underlined {
 }
 .fourthContainerFirstCard {
   margin-top: 30px;
-  /* height: 100px; */
 }
 .fourthContainerCardMainHeading h1 {
   background-color: #ca0000;
@@ -1123,6 +1130,13 @@ underlined {
   color: white;
   padding: 10px;
 }
+#secondContainerCardContainer{
+  position: sticky !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  top: 40px !important;
+  inset-inline-start: 10px !important;
+}
 @media (min-width: 1024px) {
   .header h2 {
     font-size: 18px;
@@ -1146,6 +1160,14 @@ underlined {
     filter: brightness(200%) contrast(0%) saturate(100%) blur(0px)
       hue-rotate(0deg);
     mix-blend-mode: initial;
+  }
+  #secondContainerCardContainer{
+    position: sticky;
+    width: 300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 40px;
+    inset-inline-start: 10px;
   }
   .thirdContainer {
     background-color: none;
@@ -1174,10 +1196,11 @@ underlined {
   .secondContainer {
     background-size: 100% auto;
     background-attachment: fixed;
-    padding-bottom: 60px;
-    padding-top: 0px;
-    /* position: sticky;
-    top: 0; */
+    padding-bottom: 20px;    
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
   }
   .secondContainer::before {
     background-size: 564px auto;
@@ -1399,15 +1422,16 @@ underlined {
     height: 100%;
   }
   .studentsWorkingClients {
-    position: relative;
-    z-index: 99;
+    /* position: relative;
+    z-index: 99; */
     width: 570px;
     /* height: 562px; */
-    margin-left: 40rem;
+    /* margin-left: 40rem; */
+    margin-left: 86rem;
   }
-  .thirdContainerCard {
+  /* .thirdContainerCard {
     margin-left: 40rem !important;
-  }
+  } */
   .mentorNameContainer {
     margin-left: 62rem !important;
   }
@@ -1447,9 +1471,86 @@ underlined {
     font-size: 16px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:1024px){
+  .studentsWorkingClients,.thirdContainerCard{
+    margin-left: 40rem;
+}
+.fourthContainerFirstCard,.fourthContainerSecondCard{
+ width: 50%;
+}
+.mentorNameContainer {
+  margin-left: 40rem !important;
+  width: 59%;
+}
+.seventhContainerCard {
+  margin-top: 0px;
+  width: 59%;
+  height: 100%;
+}
+.seventhContainerCard img {
+   height: auto;
+}
+.seventhContainerFirstContainer {
+  width: 95%;
+}
+.Card {
+  width: 100%;
+}
+.eightContainerCardsFirstContainer, .eightContainerCardsSSecondContainer {
+  margin: 0px 15px;
+  padding: 0px 0px;
+}
+}
+/* @media (min-width: 768px)and (max-width: 1024px) {
   .metaAdRedButton {
-    display: none;
+    display: none !important;
+  }
+  .desktopmetaAdRedButton {
+    display: block !important;
+  }
+  .metaAddContent {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .desktopmetaAdRedButton {
+    display: block;
+    width: 87%;
+  }
+  .metaAddContent h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    margin-top: 22px;
+  }
+  .metaAddContentParaContainer p {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .metaAddContentParaContainer {
+    width: 96%;
+  }
+  .metaAddContentSubContainer {
+    width: 55%;
+  }
+  .metaAddContentSecondSubContainer {
+    width: 45%;
+  }
+  iframe {
+    width: 100%;
+    height: 201px;
+  }
+  .faq-answer p {
+    font-size: 18px;
+    padding: 18px;
+  }
+} */
+@media (max-width: 767px) {
+  .metaAdRedButton {
+    display: none !important;
   }
   .desktopmetaAdRedButton {
     display: block !important;
