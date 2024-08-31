@@ -1620,7 +1620,7 @@ underlined {
 }
 @media(min-width:1020px) and (max-width:1030px){
   .studentsWorkingClients,.thirdContainerCard{
-    margin-left: 40rem;
+    margin-left: 40rem !important;
 }
 }
 
