@@ -704,14 +704,12 @@
       }
 
       if (answer.style.maxHeight) {
-        // Close the currently open answer
         answer.style.maxHeight = null;
         answer.style.opacity = 0;
         answer.style.transform = "scaleY(0)";
         plusIcon.style.display = 'inline';
         currentOpenAnswer = null;
       } else {
-        // Open the clicked answer
         answer.style.maxHeight = answer.scrollHeight + "px";
         answer.style.opacity = 1;
         answer.style.transform = "scaleY(1)";
@@ -719,47 +717,44 @@
       }
     }
     document.addEventListener('DOMContentLoaded', function() {
-    // Get all the card containers and pipeLineDiv elements
+  
     const containers = document.querySelectorAll('.fifthContainerFirstCardContainer, .fifthContainerSecondCardContainer, .fifthContainerThirdCardContainer, .fifthContainerFourthCardContainer, .fifthContainerFifthCardContainer, .fifthContainerSixthCardContainer');
     const pipeLineDivs = document.querySelectorAll('.pipeLineDiv');
     const svgs = document.querySelectorAll('.pipeLineDiv svg');
     
-    // Get the progress bar inner div
+   
     const progressBar = document.querySelector('.pipeLineInner');
-    const maxHeight = 853; // Maximum height of the progress bar
-    const stepHeight = maxHeight / containers.length; // Height increment per container
+    const maxHeight = 853; 
+    const stepHeight = maxHeight / containers.length; 
 
-    let currentHeight = 0; // Initial height of the progress bar
+    let currentHeight = 0; 
 
-    // Function to increase or decrease the height of the progress bar
+ 
     function adjustProgressBarHeight(visibleContainerIndex, scrollDirection) {
         if (scrollDirection === 'down') {
-            // Increase height based on the number of containers scrolled into view
+         
             currentHeight = (visibleContainerIndex + 1) * stepHeight;
         } else if (scrollDirection === 'up') {
-            // Decrease height based on the number of containers scrolled out of view
+         
             currentHeight = visibleContainerIndex * stepHeight;
         }
 
-        // Ensure the height stays within bounds (0px to maxHeight)
         currentHeight = Math.max(0, Math.min(currentHeight, maxHeight));
 
-        // Apply the new height
         progressBar.style.height = currentHeight + 'px';
 
-        // Update SVG color and pipeLineDiv background color based on progress
+
         pipeLineDivs.forEach((pipeLineDiv, index) => {
             if (currentHeight < (index + 1) * stepHeight) {
-                svgs[index].style.fill = 'black'; // Change SVG color to black
-                pipeLineDiv.style.backgroundColor = 'white'; // Change background color to white
+                svgs[index].style.fill = 'black'; 
+                pipeLineDiv.style.backgroundColor = 'white'; 
             } else {
-                svgs[index].style.fill = ''; // Reset SVG color
-                pipeLineDiv.style.backgroundColor = ''; // Reset background color
+                svgs[index].style.fill = ''; 
+                pipeLineDiv.style.backgroundColor = ''; 
             }
         });
     }
 
-    // Determine scroll direction
     let lastScrollY = window.scrollY;
 
     window.addEventListener('scroll', () => {
@@ -767,7 +762,6 @@
         let scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
         lastScrollY = currentScrollY;
 
-        // Check visibility of containers
         containers.forEach((container, index) => {
             let rect = container.getBoundingClientRect();
             if (rect.top < window.innerHeight && rect.bottom >= 0) {
